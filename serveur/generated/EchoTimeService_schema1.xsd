@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://webservice/" xmlns:tns="http://webservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="echo" type="tns:echo"/>
+
+  <xs:element name="echoResponse" type="tns:echoResponse"/>
+
+  <xs:element name="getTimeByZone" type="tns:getTimeByZone"/>
+
+  <xs:element name="getTimeByZoneResponse" type="tns:getTimeByZoneResponse"/>
+
+  <xs:complexType name="echo">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="echoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTimeByZone">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTimeByZoneResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
